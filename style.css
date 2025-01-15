@@ -54,6 +54,16 @@ body::-webkit-scrollbar {
     transform: translateY(-6px);
 }
 
+.screen-larg{
+    display: block;
+}
+.screen-mob{
+    display: none;
+}
+#back-btn{
+    display: none;
+}
+
 
 @media (max-width: 766px) {
     .album {
@@ -63,7 +73,22 @@ body::-webkit-scrollbar {
         margin-top: 2em; 
     }
 
+    .container #back-btn{
+        display: block;
+        color: #ffffff;
+        text-decoration: none;
+        margin-top: 1em;
+        margin-bottom: 0;
+    }
+
     .card {
         margin: 0 auto 1.5rem;
+    }
+
+    .screen-larg{
+        display: none;
+    }
+    .screen-mob{
+        display: block;
     }
 }
